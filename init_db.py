@@ -27,12 +27,8 @@ def execute_query(db_path, query):
 if __name__ == "__main__":
     # Przykładowe użycie
     db_file = "borowka.sqlite"  # ścieżka do pliku bazy danych
-    sql_query = """-- Table: Zbiory
-CREATE TABLE Zbiory (
-    ZbioryId integer NOT NULL CONSTRAINT Zbiory_pk PRIMARY KEY AUTOINCREMENT,
-    Data date NOT NULL,
-    Ilosc_Kg numeric NOT NULL
-);
+    sql_query = """
+    SELECT SUM(Ilosc_Kg * Cena_Za_Ka) FROM Sprzedarz
 
 """  # przykładowe zapytanie
 
