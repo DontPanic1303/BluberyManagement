@@ -28,7 +28,7 @@ if __name__ == "__main__":
     # Przykładowe użycie
     db_file = "borowka.sqlite"  # ścieżka do pliku bazy danych
     sql_query = """
-    SELECT SUM(Ilosc_Kg * Cena_Za_Ka) FROM Sprzedarz
+    delete from Zbiory
 
 """  # przykładowe zapytanie
 
